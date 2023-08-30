@@ -3,10 +3,10 @@ import java.util.regex.Pattern;
 
 public class ExprReg {
 
-    public void fraseExacta(String cadena1){
+    public void fraseExacta(String args){
 
         Pattern pt = Pattern.compile("Hola Mundo");
-        Matcher mt = pt.matcher(cadena1);
+        Matcher mt = pt.matcher(args);
 
         if (mt.matches()){
             System.out.println("EXPRESION VALIDA :)");
@@ -55,7 +55,7 @@ public class ExprReg {
 
     public void validarNombreArchivo(String cadena5){
 
-        Pattern pt = Pattern.compile("^ISI[0-9]{4}-[12][.]");
+        Pattern pt = Pattern.compile("^ISI[0-9]{4}-[12][.]txt|csv");
         Matcher mt = pt.matcher(cadena5);
 
         if (mt.matches()){
